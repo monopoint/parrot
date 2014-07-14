@@ -5,7 +5,7 @@ import java.net.URL;
 import java.util.Properties;
 
 /**
- * Espen Hjertø / Kantega AS / 7/13/14
+ * spin / monopoint
  */
 public class Parrot {
 
@@ -35,7 +35,7 @@ public class Parrot {
     }
 
 
-    // TODO: should return path as atring, not URL, as this includes "file:/"
+    // TODO: should return path as string, not URL, as this includes "file:/"
 
     private URL getAppLocationPath(){
         URL url = Main.class.getProtectionDomain().getCodeSource().getLocation();
