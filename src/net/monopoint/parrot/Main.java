@@ -1,19 +1,17 @@
 package net.monopoint.parrot;
 
-
-import javax.tools.JavaFileManager;
-import java.net.URL;
-
 public class Main {
 
     public static void main(String[] args) {
-	    System.out.println("hello parrot");
+        if (args.length != 2){
+            System.out.println("Invalid arguments");
+            System.out.println("usage: parrot [path] [filename]");
+            System.exit(0);
+        }
 
-        Parrot parrot = new Parrot();
+        Parrot parrot = new Parrot(args[0], args[1]);
 
+        System.exit(0);
 
     }
-
-
-
 }
